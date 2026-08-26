@@ -13,6 +13,7 @@ require_https = true
 # These sites currently serve valid pages to browsers while blocking automated
 # link checkers. Review these exclusions manually when updating their entries.
 exclude = [
+  '^https://collegescorecard\.ed\.gov/',
   '^https://commondataset\.org/',
   '^https://www\.niche\.com/',
   '^https://www\.usnews\.com/',
