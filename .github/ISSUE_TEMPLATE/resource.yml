@@ -1,0 +1,104 @@
+name: Suggest a resource
+description: Propose a college-search, application, affordability, scholarship, or test-preparation resource.
+title: "[Resource]: "
+labels:
+  - addition
+  - needs-review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping students and families. Please provide enough detail to evaluate the resource without creating an account.
+
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+      placeholder: College Navigator
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Canonical URL
+      description: Use the official URL without referral or tracking parameters.
+      placeholder: https://example.org/resource
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Suggested category
+      options:
+        - College discovery and comparison
+        - Application planning and tracking
+        - Costs and financial aid
+        - Scholarships
+        - Test preparation
+        - Data and reference
+        - New category
+    validations:
+      required: true
+
+  - type: textarea
+    id: value
+    attributes:
+      label: Who it helps and what it does
+      description: Explain the concrete value for prospective students or their families.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Cost and account requirements
+      options:
+        - Free without an account
+        - Free with an account
+        - Free tier with paid features
+        - Paid
+        - Unknown
+    validations:
+      required: true
+
+  - type: input
+    id: region
+    attributes:
+      label: Geographic or eligibility limits
+      description: Enter "None known" if it is broadly available.
+      placeholder: U.S. undergraduate applicants
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: Open-source license
+      description: Required for GitHub repositories; otherwise enter "Not applicable."
+      placeholder: MIT
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Maintenance and trust evidence
+      description: Link to official documentation, data sources, recent releases, or other evidence that the resource is current and trustworthy.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I searched the README and open issues for duplicates.
+          required: true
+        - label: This is not a referral, affiliate, or tracking link.
+          required: true
+        - label: I disclosed meaningful costs, account requirements, regional limits, and AI use.
+          required: true
+        - label: I agree to follow the project's Code of Conduct.
+          required: true

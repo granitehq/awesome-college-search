@@ -1,0 +1,58 @@
+name: Report a broken or outdated link
+description: Report a dead, redirected, misleading, or materially changed resource.
+title: "[Broken link]: "
+labels:
+  - broken-link
+  - needs-review
+body:
+  - type: input
+    id: resource
+    attributes:
+      label: Resource name
+      placeholder: Name shown in the README
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Current URL
+      placeholder: https://example.org/old-page
+    validations:
+      required: true
+
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Problem
+      options:
+        - Link is broken
+        - Link redirects to unrelated content
+        - Description is outdated or misleading
+        - Pricing or account requirements changed
+        - Resource appears abandoned
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: replacement
+    attributes:
+      label: Suggested replacement URL
+      description: Optional; use a canonical URL without tracking parameters.
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details or evidence
+      description: Include error messages, deprecation notices, or other useful context.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched open issues for an existing report.
+          required: true

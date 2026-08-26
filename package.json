@@ -1,0 +1,17 @@
+{
+  "name": "awesome-college-search",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Quality checks for the Awesome College Search list",
+  "scripts": {
+    "check:duplicates": "node scripts/check-duplicates.mjs",
+    "lint": "awesome-lint",
+    "test": "npm run lint && npm run check:duplicates"
+  },
+  "devDependencies": {
+    "awesome-lint": "2.3.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

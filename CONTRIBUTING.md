@@ -2,6 +2,8 @@
 
 Thank you for helping students and families find useful college-planning resources.
 
+If you are not comfortable editing Markdown or opening a pull request, use the repository's [structured issue forms](https://github.com/granitehq/awesome-college-search/issues/new/choose). A maintainer or another contributor can turn an accepted suggestion into a list entry.
+
 ## Suggesting a resource
 
 Before opening a pull request:

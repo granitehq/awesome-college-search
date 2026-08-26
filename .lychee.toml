@@ -1,0 +1,20 @@
+verbose = "info"
+no_progress = true
+max_retries = 2
+retry_wait_time = 2
+timeout = 20
+max_concurrency = 8
+host_concurrency = 2
+user_agent = "Mozilla/5.0 awesome-college-search-link-check"
+accept = ["200..=299", "429"]
+method = "get"
+require_https = true
+
+# These sites currently serve valid pages to browsers while blocking automated
+# link checkers. Review these exclusions manually when updating their entries.
+exclude = [
+  '^https://commondataset\.org/',
+  '^https://www\.niche\.com/',
+  '^https://www\.usnews\.com/',
+]
+exclude_path = ["(^|/)node_modules/"]

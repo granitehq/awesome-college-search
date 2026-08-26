@@ -62,7 +62,7 @@ Never pay to submit a scholarship application or share sensitive financial infor
 
 ## Contributing
 
-Suggestions and corrections are welcome. Please read the [contribution guidelines](CONTRIBUTING.md) before opening an issue or pull request.
+Suggestions and corrections are welcome. Please read the [contribution guidelines](CONTRIBUTING.md) before opening a pull request. No Git experience is required: use the [structured issue forms](https://github.com/granitehq/awesome-college-search/issues/new/choose) to suggest a resource or report an outdated link.
 
 ## Acknowledgements
 

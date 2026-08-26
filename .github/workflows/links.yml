@@ -1,0 +1,79 @@
+name: Links
+
+on:
+  pull_request:
+    paths:
+      - "**/*.md"
+      - .lychee.toml
+      - .github/workflows/links.yml
+  push:
+    branches:
+      - main
+    paths:
+      - "**/*.md"
+      - .lychee.toml
+      - .github/workflows/links.yml
+  schedule:
+    - cron: "17 14 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  links:
+    name: Links
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          args: --config .lychee.toml "./**/*.md"
+          fail: false
+          format: markdown
+          output: ./lychee-report.md
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fail pull request or push checks
+        if: >-
+          steps.lychee.outputs.exit_code != '0' &&
+          (github.event_name == 'pull_request' || github.event_name == 'push')
+        run: exit 1
+
+      - name: Open or update the maintenance issue
+        if: >-
+          steps.lychee.outputs.exit_code != '0' &&
+          (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Automated link check needs attention"
+          issue_number="$(gh issue list --state open --label automated --search "${title} in:title" --json number --jq '.[0].number // empty')"
+
+          if [[ -n "${issue_number}" ]]; then
+            gh issue comment "${issue_number}" --body-file ./lychee-report.md
+          else
+            gh issue create \
+              --title "${title}" \
+              --label "automated,broken-link,needs-review" \
+              --body-file ./lychee-report.md
+          fi
+
+      - name: Close a resolved maintenance issue
+        if: >-
+          steps.lychee.outputs.exit_code == '0' &&
+          (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          title="Automated link check needs attention"
+          issue_number="$(gh issue list --state open --label automated --search "${title} in:title" --json number --jq '.[0].number // empty')"
+
+          if [[ -n "${issue_number}" ]]; then
+            gh issue close "${issue_number}" --comment "The latest automated check found no broken links."
+          fi

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contribution guidelines
+    url: https://github.com/granitehq/awesome-college-search/blob/main/CONTRIBUTING.md
+    about: Review the inclusion and quality criteria before suggesting a resource.
