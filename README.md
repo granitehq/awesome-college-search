@@ -36,6 +36,7 @@ The list emphasizes trustworthy data, practical tools, and resources that are us
 - [CSS Profile](https://cssprofile.collegeboard.org/) - Submit financial information to participating colleges and scholarship programs for nonfederal institutional aid; application fees may apply.
 - [FAFSA](https://studentaid.gov/h/apply-for-aid/fafsa) - Official application for U.S. federal grants, work-study funds, and loans; states and colleges also use it to award aid.
 - [Federal Student Aid Estimator](https://studentaid.gov/aid-estimator/) - Estimate eligibility for federal student aid before completing the FAFSA.
+- [HVAC School Guide — Cost vs Metro Pay](https://hvacschoolguide.com/reports/hvac-training-cost-vs-pay) - Free months-to-recoup table comparing HVAC training cost to metro pay (BLS OEWS); useful when families weigh trade school against college cost and earnings.
 - [Net Price Calculator Center](https://collegecost.ed.gov/net-price) - Find a college's calculator and estimate what students like you paid after grants and scholarships.
 
 ## Scholarships
