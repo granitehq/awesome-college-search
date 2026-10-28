@@ -30,6 +30,7 @@ The list emphasizes trustworthy data, practical tools, and resources that are us
 - [Common App](https://www.commonapp.org/) - Apply to participating colleges and manage shared application materials, requirements, and deadlines in one account.
 - [Scoir](https://www.scoir.com/students/apply-with-scoir) - Free college discovery and application-management platform for students and families, including applications to participating Coalition colleges.
 - [Student Ops](https://github.com/Apollo887/student-ops) - Open-source, AI-assisted college and career planning pipeline for evaluating schools, comparing aid, finding scholarships, and organizing application work. It includes essay-drafting workflows, so applicants should follow each institution's AI policies and remain responsible for their submissions.
+- [The GPA Calculator](https://thegpacalculator.com) - Calculate unweighted and weighted high school GPA and college cumulative GPA on a 4.0 scale; free, with no account required.
 
 ## Costs and financial aid
 
