@@ -29,6 +29,7 @@ The list emphasizes trustworthy data, practical tools, and resources that are us
 - [College Tools](https://github.com/granitehq/college-tools) - Open-source Google Sheets toolkit for researching colleges, comparing admission fit and costs, tracking applications and aid, and generating a shared deadline-aware task plan. ([Use the template](https://college-tools.granite-hq.com/getting-started).)
 - [Common App](https://www.commonapp.org/) - Apply to participating colleges and manage shared application materials, requirements, and deadlines in one account.
 - [Scoir](https://www.scoir.com/students/apply-with-scoir) - Free college discovery and application-management platform for students and families, including applications to participating Coalition colleges.
+- [Shortlist](https://shortlist.college/planner) - Free planner for U.S. four-year colleges that sorts a list into Likely, Target and Reach estimates from your grades and test scores and builds a month-by-month application plan; no account, and the list is saved in your browser.
 - [Student Ops](https://github.com/Apollo887/student-ops) - Open-source, AI-assisted college and career planning pipeline for evaluating schools, comparing aid, finding scholarships, and organizing application work. It includes essay-drafting workflows, so applicants should follow each institution's AI policies and remain responsible for their submissions.
 - [The GPA Calculator](https://thegpacalculator.com) - Calculate unweighted and weighted high school GPA and college cumulative GPA on a 4.0 scale; free, with no account required.
 
@@ -60,6 +61,7 @@ Never pay to submit a scholarship application or share sensitive financial infor
 - [collegedata.fyi](https://github.com/bolewood/collegedata-fyi) - Open-source Common Data Set archive and API that preserves institution-published documents and joins them with IPEDS and College Scorecard data.
 - [Common Data Set Initiative](https://commondataset.org/) - Definitions and reporting standards behind the institution-published Common Data Set used by many college-search resources.
 - [IPEDS](https://nces.ed.gov/ipeds/use-the-data) - Official U.S. postsecondary institution data with downloadable files and analysis tools.
+- [Shortlist College Data](https://github.com/justingleader/shortlist-college-data) - Free CSVs of early decision and waitlist admit rates from colleges' Common Data Sets, College Scorecard net prices under $10,000 for low-income families, and early-round release dates, each row linked to its source; CC BY 4.0.
 
 ## Contributing
 
