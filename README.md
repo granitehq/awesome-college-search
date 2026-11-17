@@ -43,9 +43,8 @@ The list emphasizes trustworthy data, practical tools, and resources that are us
 
 - [BigFuture Scholarship Search](https://bigfuture.collegeboard.org/pay-for-college/scholarship-search) - Search a large scholarship directory and save opportunities to a College Board account.
 - [BigFuture Scholarships](https://bigfuture.collegeboard.org/pay-for-college/bigfuture-scholarships) - Earn entries for College Board scholarships by completing college-planning steps; eligibility rules and deadlines apply.
-- [CareerOneStop Scholarship Finder](https://www.careeronestop.org/toolkit/training/find-scholarships.aspx) - Search scholarship, fellowship, grant, and award listings sponsored by the U.S. Department of Labor.
 
-Never pay to submit a scholarship application or share sensitive financial information without verifying the sponsor. The [Federal Trade Commission's scholarship-scam guidance](https://consumer.ftc.gov/articles/how-avoid-scholarship-and-financial-aid-scams) explains common warning signs.
+Never pay to submit a scholarship application or share sensitive financial information without verifying the sponsor.
 
 ## Test preparation
 
